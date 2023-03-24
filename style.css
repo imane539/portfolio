@@ -31,7 +31,7 @@ section{
     left: 0;
     height: 10%;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 2rem 6%;
     background: var(--bigcolor);
     display: flex;
     justify-content: space-between;
@@ -41,16 +41,10 @@ section{
 .header.sticky{
     border-bottom: .1rem solid rgba(0,0,0,.2);
 }
-.logo{
-    font-size: 2.3rem;
-    color: var(--txt-color);
-    font-weight: 600;
-    cursor: default;
-}
 .navbar a{
     font-size: 1.5rem;
     color: var(--txt-color);
-    margin-left: 4rem;
+    margin-left:9rem;
     transition: .3s;
 }
 .navbar a:hover,
@@ -67,12 +61,15 @@ section{
     justify-content: center;
     align-items: center;
 }
+.home p{
+    font-size:1.7rem;
+
+}
 .home-content{
     margin-top:4rem;
-    margin-left:-30%;
 }
 h3{
-    font-size:2.1rem;
+    font-size:2rem;
     font-weight: 700;
 }
 h3:nth-of-type(2){
@@ -82,22 +79,9 @@ span{
     color: var(--main-color);
 }
 h1{
-    font-size:3.6rem;
+    font-size:3rem;
     font-weight: 700;
     line-height:1.3;
-}
-.home-img{
-    margin-left:53%;
-    margin-top: -20%;
-}
-.home-img img{
-    width:26vw;
-    height:26vw;
-    mix-blend-mode: hard-light;
-    margin-left:100%;
-    margin-top: -890rem;
-    border-radius:35%;
-    animation: image 4s ease-in-out infinite;
 }
 @keyframes image{
     0%{
@@ -297,14 +281,15 @@ footer p{
     footer{
         padding: 2rem 3%;
     }
+    .about{
+            padding-bottom: 7rem;
+       
+    }
     .services{
         padding-bottom: 7rem;
     }
     .projects{
         padding-bottom: 7rem;
-    }
-    .contact{
-        min-height: auto;
     }
 }
 @media (max-width:768px){
@@ -336,18 +321,14 @@ footer p{
         flex-direction: column;
     }
     
-    .home-content{
-        margin-left:-12%;
-    }
+    
     .home-content h3{
         font-size: 2.6rem;
     }
     .home-content h1{
         font-size: 5rem;
     }
-    .home-img{
-        margin-right:15%;
-    }
+    
     .about{
         flex-direction: column-reverse;
     }
